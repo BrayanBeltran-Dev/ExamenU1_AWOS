@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen U1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Consulta de noticias</h1>
+    <p>Realizar Busqueda</p>
+
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <input 
+          id="searchInput"
+          class="form-control"
+          type="text"
+          placeholder="Buscar noticia"
+        >
+      </div>
+
+      <div class="col-md-3">
+        <input type="date" id="fromDate" class="form-control">
+      </div>
+
+      <div class="col-md-3">
+        <input type="date" id="toDate" class="form-control">
+      </div>
+
+      <div class="col-md-2">
+        <button id="searchBtn" class="btn btn-primary">
+          Buscar
+        </button>
+      </div>
+    </div>
+  
+  <div id="contentData" class="row"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
